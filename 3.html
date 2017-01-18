@@ -83,5 +83,146 @@
 
 
 </div>
+   <script>
+function er5() {
+var fruits = ["Яблоко", "Апельсин", "Слива", "банан", "груша"];
+var e=4;
+for (;e>=0;){
+l='i'+e;
+fruits[e]= document.getElementById(l).value;
+e--;}
+e=4;
+document.getElementById('p0').innerHTML =""
+for (;e>=0;){
+document.getElementById('p0').innerHTML = document.getElementById('p0').innerHTML +" "+( fruits[e] ); 
+e--;}}
+   
+</script>
+<br>
+<br>
+
+<a href="#on" class="button15" onclick="er5()" >Array</a>
+<br>
+<input value="" id="i0" type="text">
+<br> 
+<input value="" id="i1" type="text">
+<br>
+<input value="" id="i2" type="text">
+<br>
+<input value="" id="i3" type="text">
+<br>
+<input value="" id="i4" type="text">
+<br>
+<script>
+function er1() {
+og = document.getElementById("quantity").value
+var i = 1;
+factorial = 1;
+while (i <= og) {
+factorial = factorial * i;
+++i;
+}
+document.getElementById('p1').innerHTML = ""
+document.getElementById('p1').innerHTML = document.getElementById('p1').innerHTML +"&#1060;&#1072;&#1082;&#1090;&#1086;&#1088;&#1080;&#1072;&#1083;" + " " + og + "=" + factorial;
+}
+</script>
+<script>
+function er2() {
+document.getElementById('p2').innerHTML = ""
+var i;
+var b;
+i = eval(document.getElementById("quantity1").value)
+b = eval(document.getElementById("quantity2").value)
+for (; i >=b; i--) 
+{
+  if (i % 2 == 0){
+document.getElementById('p2').innerHTML = document.getElementById('p2').innerHTML + " " + i ;
+};
+}
+}
+</script>
+<br>
+<p1 id="p1">1</p1>
+<br>
+<button onclick="er1()">факториал</button>
+<input value="" id="quantity" type="text">
+<br>
+<p2 id="p2">2</p2>
+<br>
+<button onclick="er2()">цикл, четные от большего к меньшему</button>
+<input value="" id="quantity1" type="text">
+<input value="" id="quantity2" type="text">
+  <script src="script.js"></script>
+ <script>
+function er5() {
+var fruits = ["Яблоко", "Апельсин", "Слива", "банан", "груша"];
+var e=4;
+for (;e>=0;){
+l='i'+e;
+fruits[e]= document.getElementById(l).value;
+e--;}
+e=4;
+document.getElementById('p0').innerHTML =""
+for (;e>=0;){
+document.getElementById('p0').innerHTML = document.getElementById('p0').innerHTML +" "+( fruits[e] ); 
+e--;}}
+   
+</script>
+<br>
+<br>
+
+<a href="#on" class="button15" onclick="er5()" >Array</a>
+<br>
+<input value="" id="i0" type="text">
+<br> 
+<input value="" id="i1" type="text">
+<br>
+<input value="" id="i2" type="text">
+<br>
+<input value="" id="i3" type="text">
+<br>
+<input value="" id="i4" type="text">
+<br>
+<script>
+function er1() {
+og = document.getElementById("quantity").value
+var i = 1;
+factorial = 1;
+while (i <= og) {
+factorial = factorial * i;
+++i;
+}
+document.getElementById('p1').innerHTML = ""
+document.getElementById('p1').innerHTML = document.getElementById('p1').innerHTML +"&#1060;&#1072;&#1082;&#1090;&#1086;&#1088;&#1080;&#1072;&#1083;" + " " + og + "=" + factorial;
+}
+</script>
+<script>
+function er2() {
+document.getElementById('p2').innerHTML = ""
+var i;
+var b;
+i = eval(document.getElementById("quantity1").value)
+b = eval(document.getElementById("quantity2").value)
+for (; i >=b; i--) 
+{
+  if (i % 2 == 0){
+document.getElementById('p2').innerHTML = document.getElementById('p2').innerHTML + " " + i ;
+};
+}
+}
+</script>
+<br>
+<p1 id="p1">1</p1>
+<br>
+<button onclick="er1()">факториал</button>
+<input value="" id="quantity" type="text">
+<br>
+<p2 id="p2">2</p2>
+<br>
+<button onclick="er2()">цикл, четные от большего к меньшему</button>
+<input value="" id="quantity1" type="text">
+<input value="" id="quantity2" type="text">
+</body>
+</html>
  
 
