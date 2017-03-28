@@ -206,3 +206,47 @@ document.getElementById('p0').innerHTML = document.getElementById('p0').innerHTM
   <h1 id="res"></h1>
 </body>
 </html>
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+
+  function calc() {
+    var n = parseInt(document.getElementById('n').value);
+    var k = parseInt(document.getElementById('k').value);
+    var m = parseInt(document.getElementById('m').value);
+    var a_n;
+    var a_n_1 = 'x';
+    var a_n_2 = 'y';
+    
+    for (var i=3; i<=n; i++) {
+      a_n = a_n_2 + a_n_1;
+      a_n_2 = a_n_1;
+      a_n_1 = a_n;
+    }
+    
+    var result = document.getElementById('res');
+    result.innerHTML = '';
+    result.append('a_n=' + a_n);
+    result.append(', ');
+    result.append('res=' + a_n.substr(k-1, m));
+  }
+  
+</script>
+</head>
+<body>
+  n = <input id="n" type="text"/>
+  <br>
+  m = <input id="m" type="text"/>
+  <br>
+  k = <input id="k" type="text"/>
+  <br>
+  <button onclick="calc()">Вычислить</button>
+  <h1 id="res"></h1>
+</body>
+</html>
