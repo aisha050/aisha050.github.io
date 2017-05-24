@@ -116,7 +116,7 @@
       a.on('value', function(snapshot) {
         var snap = snapshot.val();
         var g = snap[b];
-        document.getElementById("inf").innerHTML ="ИД: " + b + "<br> Имя: " + g.name + "<br> Фамилия: " + g.secondname + "<br> Отчество: " + g.lastname + "<br> Размер ноги: " + g.footsize +"<br Фото: > <img src=" + g.url + ">";
+        document.getElementById("inf").innerHTML ="ИД: " + b + "<br> Имя: " + g.name + "<br> пароль: " + g.password + "<br> Фамилия: " + g.secondname + "<br> Отчество: " + g.lastname + "<br> Размер ноги: " + g.footsize +"<br Фото: > <img src=" + g.url + ">";
       });
     }
   </script>
@@ -133,6 +133,7 @@
   <input type="text" class="form-control" id="footsize_value" placeholder="" value="37" />
   <br> img
   <input type="text" class="form-control" id="url_value" placeholder="" value="https://pp.userapi.com/c836126/v836126600/3e4d8/qiF0QnHMfX8.jpg" />
+  
   <br>
    пароль
   <input type="password" class="form-control" id="password_value" placeholder="" value="1111" />
